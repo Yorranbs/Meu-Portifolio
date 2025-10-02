@@ -1,95 +1,123 @@
-/* Estilo geral para a página */
 body {
     background-color: #121212;
     color: #ffffff;
     font-family: Arial, sans-serif;
-    margin: 0; /* Remove margens para o header colar no topo */
+    margin: 0; 
 }
 
-/* Estilizando o Cabeçalho e o Menu */
 header {
-    background-color: #1f1f1f; /* Um cinza um pouco mais claro que o fundo */
+    background-color: #1f1f1f; 
     padding: 15px 0;
-    position: fixed; /* Deixa o menu fixo no topo da tela */
+    position: fixed; 
     width: 100%;
     top: 0;
 }
 
 nav ul {
-    list-style: none; /* Remove as bolinhas da lista */
+    list-style: none; 
     margin: 0;
     padding: 0;
-    text-align: center; /* Centraliza os itens do menu */
+    text-align: center; 
 }
 
 nav li {
-    display: inline-block; /* Coloca os itens do menu um ao lado do outro */
-    margin: 0 20px; /* Adiciona um espaçamento entre os itens */
+    display: inline-block; 
+    margin: 0 20px; 
 }
 
 nav a {
     color: #ffffff;
-    text-decoration: none; /* Remove o sublinhado dos links */
+    text-decoration: none; 
     font-size: 18px;
 }
 
-/* Estilizando a Seção de Apresentação (Hero) */
+
 #hero {
     text-align: center;
-    padding-top: 150px; /* Espaçamento no topo para não ficar atrás do menu fixo */
+    padding-top: 150px; 
     padding-bottom: 50px;
 }
 
 .foto-perfil {
     width: 150px;
     height: 150px;
-    border-radius: 50%; /* A mágica para deixar a foto redonda! */
-    border: 3px solid #00aaff; /* Borda azul para destacar */
-    object-fit: cover; /* Garante que a foto não fique distorcida */
+    border-radius: 50%;
+    border: 3px solid #00aaff; 
+    object-fit: cover; 
 }
 
 h1 {
     color: #00aaff;
-    font-size: 2.5em; /* Aumenta o tamanho do seu nome */
+    font-size: 2.5em; 
     margin-top: 20px;
     margin-bottom: 10px;
 }
 
 #hero p {
     font-size: 1.2em;
-    color: #c0c0c0; /* Um cinza mais claro para o subtítulo */
+    color: #c0c0c0; 
 }
 
-/* Estilizando o Rodapé */
+
 footer {
     text-align: center;
     padding: 20px;
     margin-top: 50px;
     background-color: #1f1f1f;
 }
-/* ========================
-   SEÇÃO SOBRE MIM
-   ======================== */
 
 #sobre-mim {
-    background-color: #1f1f1f; /* Mesma cor do header/footer para criar um bloco visual */
-    max-width: 800px;          /* Limita a largura do conteúdo para facilitar a leitura */
-    margin: 60px auto;         /* 60px de espaço em cima/baixo e 'auto' para centralizar o bloco na horizontal */
-    padding: 30px;             /* Espaçamento interno para o texto não colar nas bordas */
-    border-radius: 8px;        /* Bordas levemente arredondadas para um visual mais suave */
+    background-color: #1f1f1f;
+    max-width: 800px;        
+    margin: 60px auto;         
+    padding: 30px;             
+    border-radius: 8px;        
 }
 
-/* O título de todas as seções (h2) */
+
 h2 {
     text-align: center;
-    color: #00aaff;          /* Mantém a consistência da cor dos títulos */
-    margin-top: 0;           /* Remove a margem de cima do h2 para alinhar melhor */
+    color: #00aaff;        
+    margin-top: 0;           
     margin-bottom: 25px;
     font-size: 2em;
 }
 
 #sobre-mim p {
-    line-height: 1.7;        /* Aumenta o espaçamento entre as linhas do parágrafo, melhorando a leitura */
-    text-align: justify;     /* Alinha o texto nas duas margens (esquerda e direita), criando um bloco mais uniforme */
+    line-height: 1.7;       
+    text-align: justify;     
     color: #c0c0c0;
+}
+
+
+#contato {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+#contato h2 {
+    margin-bottom: 20px;
+}
+
+#contato p {
+    max-width: 500px;
+    margin: 0 auto 30px auto; 
+    color: #c0c0c0;
+    line-height: 1.6;
+}
+
+.links-contato a {
+    background-color: #00aaff;
+    color: #ffffff;
+    padding: 15px 30px;
+    margin: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.links-contato a:hover {
+    transform: scale(1.05); 
 }
